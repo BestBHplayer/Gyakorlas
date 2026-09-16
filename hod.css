@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: lightseagreen;
+    background-color: whitesmoke;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px 0;
@@ -19,31 +19,33 @@ body {
 
 .fejléc {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
     background-color: whitesmoke;
     padding: 10px;
     border: 1px solid whitesmoke;
     border-radius: 8px;
+    margin: 0px 200px 0px 200px;
 }
 
 .fejléc a {
-    background-color: lightgreen;
+    background-color: green;
     color: white;
     font-weight: bold;
     text-decoration: none;
     text-align: center;
     border-radius: 6px;
     padding: 8px 10px;
+    
 }
 
 .fejléc a:hover {
-    background-color: green;
+    background-color: greenyellow;
 }
 
 h1 {
-    background-color: gray;
-    color: blue;
+    background-color: lavender;
+    color: green;
     font-size: 24px;
     font-weight: bold;
     padding: 12px;
