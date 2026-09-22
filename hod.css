@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  background-color: white;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid lightslategray;
+  border-radius: 4px;
+}
+
+.fejlec {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  background-color: whitesmoke;
+  padding: 10px;
+  border: 1px solid whitesmoke;
+  border-radius: 8px;
+  max-width: 460px;
+  margin: 0 auto;
+}
+
+.fejlec a {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 10px;
+}
+
+.fejlec a:hover {
+  background-color: greenyellow;
+}
+
+h1 {
+  background-color: lavender;
+  color: green;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 6px;
+  margin: 14px 0;
+}
+
+.tartalom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  grid-template-areas:
+    "bevezeto bevezeto"
+    "jellemzo fajtak";
+}
+
+.bevezeto {
+  display: grid;
+  grid-area: bevezeto;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  align-items: stretch;
+  border: 1px solid lightslategray;
+  border-radius: 8px;
+  padding: 6px;
+}
+
+.tartalom p {
+  text-align: justify;
+  margin: 0;
+  line-height: 1.45;
+  font-size: 13px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid lightslategray;
+  border-radius: 8px;
+}
+
+.jellemzo {
+  grid-area: jellemzo;
+}
+
+.fajtak {
+  grid-area: fajtak;
+}
+
+.kartya {
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 10px 12px;
+}
+
+.jellemzo h2 {
+  background-color: purple;
+  color: white;
+  margin: 0;
+  padding: 8px 0;
+  border-bottom: 1px dashed green;
+}
+
+.fajtak h2 {
+  background-color: lightgreen;
+  color: white;
+  margin: 0;
+  padding: 8px 0;
+  border-bottom: 1px dashed green;
+}
+
+.fajtak ol {
+  padding: 12px 24px;
+  margin: 0;
+}
+
+.jellemzo {
+  background-color: lightblue;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 700px) {
+  .tartalom {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "bevezeto"
+      "jellemzo"
+      "fajtak";
+  }
+
+  img {
+    max-height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 12px;
+    border-radius: 0;
+  }
+
+  .fejlec {
+    grid-template-columns: 1fr;
+  }
+
+  .bevezeto {
+    grid-template-columns: 1fr;
+  }
+}
